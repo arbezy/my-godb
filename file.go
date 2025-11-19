@@ -43,7 +43,7 @@ func randomInt() int {
 // to do this we need a handle (file descriptor) of the directory??
 
 /* func SaveData2(path string, data []byte) error {
-	dir, err := os.OpenFile(path, os.O_WRONLY|os.O_CREATE|os.O_EXCL|os.O_SYNC, fs.ModeDir)
+	dir, err := os.OpenFile(path, os.O_RDONLY|os.O_DIRECTORY, 0755)
 	if err != nil {
 		return err
 	}
